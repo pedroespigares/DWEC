@@ -1,0 +1,1 @@
+setTimeout(() => console.log("funciona"),1000);

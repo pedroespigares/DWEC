@@ -1,0 +1,1 @@
+document.write(`La página web tiene ${document.links.length} enlaces`)

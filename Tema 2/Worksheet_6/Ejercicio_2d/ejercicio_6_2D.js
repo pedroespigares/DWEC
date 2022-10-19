@@ -1,0 +1,1 @@
+document.write(`El id de la primera imagen es <b>'${document.images[0].id}'</b>`)
