@@ -1,4 +1,4 @@
-# Repositorio DWEC
+# DWEC Repository
 This is the repository where you will find the basic exercises of JavaScript and other technologies done in the Web Development in Client Environment course.
 ✌
 </br></br>
