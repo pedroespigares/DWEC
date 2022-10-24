@@ -1,3 +1,13 @@
+document.write("<table>")
+for(let i=0;i<=100;i++){
+  document.write("<tr>");
+  for(let j=0;j<=100;j++){
+    document.write("<td></td>")
+  }
+  document.write("</tr>");
+}
+document.write("</table>")
+
 window.onload = () => {
   let celdas = document.getElementsByTagName("td");
   for (i = 0; i < celdas.length; i++) {
