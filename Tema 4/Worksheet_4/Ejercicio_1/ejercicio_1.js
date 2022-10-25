@@ -1,6 +1,21 @@
 window.onload = () => {
     let temaNormal = document.getElementById("temaNormal");
     
+    let temaMinimalista = document.getElementById("temaMinimalista")
+
+    temaMinimalista.addEventListener("click", () => {
+        let html = document.querySelector("html");
+        html.style.backgroundColor = "white";
+
+        let body = document.querySelector("body");
+        body.removeAttribute("style");
+
+        let nav = document.querySelector("nav");
+        nav.removeAttribute("style");
+
+        let h1 = document.querySelector("h1");
+        h1.removeAttribute("style");
+    })
 
     temaNormal.addEventListener("click", () =>{
         let html = document.querySelector("html");
