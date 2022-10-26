@@ -57,7 +57,7 @@ window.onload = () => {
         marco.style.borderColor = "black";
         marco.style.borderStyle = "solid";
         marco.style.padding = "7px";
-        marco.style.paddingRight = "87%";
+        marco.style.paddingRight = "70%";
 
     })
     
