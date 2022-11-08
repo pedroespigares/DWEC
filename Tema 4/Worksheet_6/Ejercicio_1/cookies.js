@@ -11,6 +11,7 @@ if (getCookie("username")) {
 
 deleteButton.addEventListener("click", () => {
   document.cookie = "username=" + getCookie("username") + "; max-age=0";
+  location.reload();
 });
 
 function getCookie(cname) {
