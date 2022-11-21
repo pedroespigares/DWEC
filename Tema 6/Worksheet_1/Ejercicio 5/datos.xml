@@ -1,0 +1,41 @@
+<correos>
+    <correo>
+        <remitente>pedritoesp04@gmail.com</remitente>
+        <destinatario>saracaro@gmail.com</destinatario>
+        <asunto>Prueba</asunto>
+        <cuerpo>Esto es una prueba</cuerpo>
+        <fecha>21/11/2022</fecha>
+    </correo>
+
+    <correo>
+        <remitente>saracaro@gmail.com</remitente>
+        <destinatario>luismoya@gmail.com</destinatario>
+        <asunto>Ajax</asunto>
+        <cuerpo>Esto es un correo</cuerpo>
+        <fecha>19/11/2022</fecha>
+    </correo>
+
+    <correo>
+        <remitente>jpineroberbel@gmail.com</remitente>
+        <destinatario>luismoya@gmail.com</destinatario>
+        <asunto>Temario</asunto>
+        <cuerpo>Temario de JS</cuerpo>
+        <fecha>11/11/2022</fecha>
+    </correo>
+
+    <correo>
+        <remitente>manolo@yahoo.es</remitente>
+        <destinatario>luismoya@gmail.com</destinatario>
+        <asunto>AJAX</asunto>
+        <cuerpo>Veamos si va</cuerpo>
+        <fecha>11/11/2022</fecha>
+    </correo>
+
+    <correo>
+        <remitente>paco@yahoo.es</remitente>
+        <destinatario>pepe@gmail.com</destinatario>
+        <asunto>Baresiño</asunto>
+        <cuerpo>Uwu</cuerpo>
+        <fecha>11/11/2022</fecha>
+    </correo>
+</correos>

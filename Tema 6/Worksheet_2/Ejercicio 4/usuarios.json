@@ -1,0 +1,19 @@
+{
+    "usuarios":[
+        {
+            "username":"jose",
+            "user_type":"admin",
+            "password":"1234"
+        },
+        {
+            "username":"paco",
+            "user_type":"admin",
+            "password":"1234"
+        },
+        {
+            "username":"manolo",
+            "user_type":"admin",
+            "password":"1234"
+        }
+    ]
+}
