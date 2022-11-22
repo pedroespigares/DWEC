@@ -1,7 +1,6 @@
 window.onload = () => {
-    let button = document.getElementById('validar');
-
-    button.addEventListener('click', lanzaPeticion);
+    let input = document.getElementById("username");
+    input.addEventListener("keyup", lanzaPeticion);
 };
 
 var httpRequest;
@@ -9,28 +8,15 @@ var httpRequest;
 function lanzaPeticion(){
     httpRequest = new XMLHttpRequest();
 
-    httpRequest.onreadystatechange = trataRespuesta;
-    httpRequest.open("GET", "usuarios.json");
+    httpRequest.open("GET", `comprueba.php?username=${document.getElementById("username").value}`, true);
+    httpRequest.onreadystatechange = compruebaNombre;
     httpRequest.send();
 }
 
-function trataRespuesta(){
-    if (httpRequest.readyState === XMLHttpRequest.DONE) {
-        if (httpRequest.status === 200) {
-        var respuesta = JSON.parse(httpRequest.responseText);
-        respuesta = respuesta.usuarios;
-        var usuario = document.getElementById('username').value;
-
-        for (var i = 0; i < respuesta.length; i++) {
-            if (respuesta[i].username == usuario) {
-                document.getElementById("resultado").innerHTML = "Usuario no disponible";
-                return;
-            } else {
-                document.getElementById("resultado").innerHTML = "Usuario disponible";
-            }
-        }
-        } else {
-          alert("There was a problem with the request.");
-        }
+function compruebaNombre(){
+    if (httpRequest.readyState === 4 && httpRequest.status === 200) {
+        let respuesta = httpRequest.responseText;
+        let resultado = document.getElementById('resultado');
+        resultado.innerHTML = respuesta;
     }
 }
