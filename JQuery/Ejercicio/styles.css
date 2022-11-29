@@ -105,6 +105,22 @@ input:focus{
     color: #00BC8C;
 }
 
+#low.marked{
+    background-color: rgb(51,148,213);
+    color: white;
+}
+
+#medium.marked{
+    background-color: #375A7F;
+    
+    color: white;
+}
+
+#high.marked{
+    background-color: #E74C3C;
+    color: white;
+}
+
 footer{
     text-align: center;
     margin-top: 5%;
