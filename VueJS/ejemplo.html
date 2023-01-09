@@ -1,0 +1,29 @@
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<div id="app">{{ message }}
+    <button @click="meterDato()">Cambiar visibilidad</button>
+    <h2 v-if="nombreSeVe">{{nombre}}</h2>
+    <ul>
+        <li v-for="nombre in ListaNombres">{{nombre}}</li>
+    </ul>
+</div>
+
+<script>
+  const { createApp } = Vue
+
+  createApp({
+    data() {
+      return {
+        message: 'uwu',
+        nombre: "Pedro",
+        nombreSeVe: true,
+        ListaNombres: ["Pedro", "Juan", "Maria", "Jose"]
+      }
+    },
+    methods:{
+        meterDato(){
+            this.ListaNombres.push("otro")
+        }
+    }
+  }).mount('#app')
+</script>
