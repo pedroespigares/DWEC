@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 
 @Component({
@@ -7,11 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./cuerpo.component.css']
 })
 export class CuerpoComponent {
-  listaDePersonas = ["Pedro", "Juan", "Luis", "Ana", "Maria"];
+  
+  @Input() datos: string[] = [];
   datoIntroducir = "";
 
-  nuevoDato(){
-    this.listaDePersonas.push(this.datoIntroducir);
+
+  nuevoDato() {
+    this.datos.push(this.datoIntroducir);
     this.datoIntroducir = "";
   }
+
+  // nuevoDato(){
+  //   this.listaDePersonas.push(this.datoIntroducir);
+  //   this.datoIntroducir = "";
+  // }
 }

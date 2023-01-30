@@ -7,9 +7,9 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./cabecera.component.css']
 })
 export class CabeceraComponent {
-  nombre = '';
+  @Input() titulo = "";
 
- 
+  
 
   // @Input() titulo = "";
   // @Output() miPrimerEvento = new EventEmitter<string>();

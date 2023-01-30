@@ -16,4 +16,6 @@ export class AppComponent {
   // ngOnInit() {
   //   this.nombre = 'juan';
   // }
+
+  listaDePersonas = ["Pedro", "Juan", "Luis", "Ana", "Maria"];
 }

@@ -1,7 +1,7 @@
 <input type="text" placeholder="Introduzca un valor" [(ngModel)]="datoIntroducir">
 <button type="button" (click)="nuevoDato()">Introducir</button>
 <ul>
-    <li *ngFor="let persona of listaDePersonas">
+    <li *ngFor="let persona of datos">
         <h3>{{persona}}</h3>
     </li>
 </ul>
