@@ -1,4 +1,6 @@
-<app-cabecera titulo="proyecto"></app-cabecera>
+<!-- Capturamos el evento emitido (nuevoDato) y lo tratamos 
+con capturaEvento($event (que son los parametros pasados)) -->
+
+<app-cabecera titulo="proyecto" (nuevoDato)="capturaEvento($event)"></app-cabecera>
 <app-cuerpo [datos]="listaDePersonas"></app-cuerpo>
-<!-- [datosenarray] = lista -->
 <app-pie nombreProyecto="Prueba con Angular"></app-pie>

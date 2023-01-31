@@ -1,5 +1,4 @@
 import { Component, Input, Output, EventEmitter} from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-cabecera',
@@ -8,6 +7,15 @@ import { FormsModule } from '@angular/forms';
 })
 export class CabeceraComponent {
   @Input() titulo = "";
+  @Output() nuevoDato = new EventEmitter<string>();
+
+  datoIntroducir = "";
+
+  // IntroduceDato lo que hace es emitir el evento nuevoDato con el valor del datoIntroducir
+  introduceDato() {
+    this.nuevoDato.emit(this.datoIntroducir);
+    this.datoIntroducir = "";
+  }
 
   
 

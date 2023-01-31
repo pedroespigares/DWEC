@@ -1,7 +1,12 @@
-<input type="text" placeholder="Introduzca un valor" [(ngModel)]="datoIntroducir">
-<button type="button" (click)="nuevoDato()">Introducir</button>
+<h2 *ngIf="!datos.length; else BLOQUE_ELSE">No hay datos</h2>
+<ng-template #BLOQUE_ELSE>
+    <h2>Lista datos: </h2>
+</ng-template>
+<button (click)="lanzaPeticionAjax()">Peticion AJAX</button>
 <ul>
     <li *ngFor="let persona of datos">
         <h3>{{persona}}</h3>
     </li>
 </ul>
+{{nombreMoneda}}
+{{categoria}}

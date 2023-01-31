@@ -1,1 +1,4 @@
 <h1>Prueba de {{titulo}} con Angular</h1>
+<input type="text" placeholder="Introduzca un valor" [(ngModel)]="datoIntroducir">
+<!-- El botón llama a introduceDato para emitir nuevoDato -->
+<button type="button" (click)="introduceDato()">Introducir</button>

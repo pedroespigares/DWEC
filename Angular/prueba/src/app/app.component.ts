@@ -17,5 +17,10 @@ export class AppComponent {
   //   this.nombre = 'juan';
   // }
 
-  listaDePersonas = ["Pedro", "Juan", "Luis", "Ana", "Maria"];
+  capturaEvento(dato:string) {
+    this.listaDePersonas.push(dato);
+  }
+
+  listaDePersonas = new Array <string>();
+  // Este array sera solo de tipo string
 }
