@@ -3,8 +3,8 @@
 // import Ejercicio14 from './ejercicios/ejercicio_1_4';
 // import Ejercicio3 from './ejercicios/ejercicio_3';
 // import Jumbotron from "./ejercicios/jumbotron";
-// import Alert from "./ejercicios/alertconditional";
-import Styles from "./ejercicios/styles";
+import Alert from "./ejercicios/alertconditional";
+// import Styles from "./ejercicios/styles";
 import "./App.css";
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
         buttonLabel="Botón de jumbotron"
         buttonURL="https://www.google.com"
       /> */}
-      {/* <Alert text="OMG! Something really bad has happended!" show={true} color="blue"/> */}
-      <Styles />
+      <Alert text="OMG! Something really bad has happended!" show={true} color="blue"/>
+      {/* <Styles /> */}
     </div>
   );
 }
